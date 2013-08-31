@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="order">
+		<item>@string/option_name</item>
+		<item>@string/option_creation</item>
+		<item>@string/option_last</item>
+		<item>@string/option_often</item>
+	</string-array>
+	
+	<string-array name="language">
+		<item>@string/option_en</item>
+		<item>@string/option_zh</item>
+	</string-array>
+	
+	<string-array name="language_value">
+		<item>en</item>
+		<item>zh</item>
+	</string-array>
+</resources>

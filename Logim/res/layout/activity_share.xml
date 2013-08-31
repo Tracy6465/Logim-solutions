@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollViewWeibo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+	<RelativeLayout 
+	    style="@style/layout_style">
+	    
+	    	<LinearLayout 
+	    	    android:id="@+id/layout"
+	    	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:gravity="bottom"
+    			android:orientation="horizontal"
+	    	   	>
+	    	    <com.facebook.widget.ProfilePictureView
+	                android:id="@+id/profilePicture"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:layout_marginLeft="15dip"
+	                android:visibility="gone"
+	                facebook:preset_size="normal"/>
+	       
+	       		<com.facebook.widget.LoginButton
+	                android:id="@+id/facebook_login_button"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="15dip"
+	                android:visibility="gone"
+	                facebook:confirm_logout="false"
+	                facebook:fetch_user_info="true"/>
+	    	</LinearLayout>
+	    	
+	       <EditText
+	            style="@style/edittext_style"
+		        android:id="@+id/share_edit"
+		        android:layout_below="@id/layout"
+		        android:text="@string/text_send_fbtwwb"
+		        android:hint="@string/hint_send"
+		        android:maxLength="140"
+		        android:inputType="textMultiLine"/>
+	       
+	       <Button
+	            style="@style/button_grey_style"
+	            android:id="@+id/share_button"
+	            android:layout_below="@id/share_edit"
+	            android:layout_width="wrap_content"
+	            android:layout_marginTop="50dip"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/button_post"/>
+	</RelativeLayout>
+</ScrollView>

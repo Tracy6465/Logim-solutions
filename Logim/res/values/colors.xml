@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <color name="transparent">#00ffffff</color>
+   <color name="white">#ffffff</color>
+   <color name="black">#000000</color>
+   <color name="white_transparent">#33ffffff</color>
+   <color name="black_transparent">#bb000000</color>
+   <color name="background">#eaebf2</color>
+   <color name="red">#c8102e</color>
+   <color name="hint">#304d83</color>
+   
+   <color name="easy">#eec8102e</color>
+   <color name="normal">#aac8102e</color>
+   <color name="hard">#66c8102e</color>
+   <color name="perfect">#22c8102e</color>
+   <color name="grey">#cccccc</color>
+</resources>

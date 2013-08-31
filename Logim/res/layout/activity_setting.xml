@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <Button
+            style="@style/button_red_style"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pref_title_sign_out"
+            android:onClick="signOut"/>
+    </RelativeLayout>
+
+</LinearLayout>

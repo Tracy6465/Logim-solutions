@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical"
+    android:weightSum="10">
+    
+    <ImageView 
+        android:id="@+id/social_logo"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+    
+    <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+        <TextView 
+            android:id="@+id/social_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView 
+            android:id="@+id/social_summary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+	
+    <ImageView 
+        android:id="@+id/social_isused"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/ic_used"
+        android:visibility="gone"/>
+</LinearLayout>

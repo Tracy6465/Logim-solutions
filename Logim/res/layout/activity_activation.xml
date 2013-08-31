@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollViewActivation"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+   <RelativeLayout
+        style="@style/layout_style"
+        android:layout_marginTop="30dip">
+
+        <ImageView
+            android:id="@+id/ImgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logim" />
+
+        <TextView
+            style="@style/text_style_info"
+            android:id="@+id/textActivation"
+            android:layout_below="@id/ImgLogo"
+            android:text="@string/text_activation"/>
+        
+		<EditText
+	        style="@style/edittext_style"
+	        android:id="@+id/introActivation"
+	        android:layout_below="@id/textActivation"
+	        android:hint="@string/hint_code"
+	        android:digits="1234567890"
+	        android:ems="5"
+	        android:inputType="number"
+	        android:maxLength="5"/>
+	
+	    <Button
+	        style="@style/button_grey_style"
+	        android:id="@+id/buttonActivation"
+	        android:layout_below="@id/introActivation"
+	        android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+	        android:onClick="ActivateUser"
+	        android:text="@string/button_activate"/>
+	    
+   </RelativeLayout>
+</ScrollView>
